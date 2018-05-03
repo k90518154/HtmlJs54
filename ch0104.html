@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onload="draw();">
+    <canvas id="paper" width="300" height="450" ></canvas>
+
+
+
+
+    <script>
+     function draw(){
+        var canvas = document.getElementById('paper')
+            if(canvas.getContext){
+                var canvas = document.getElementById('paper');
+                var ctx = canvas.getContext('2d');
+                ctx.fillRect(25,25,250,100);              
+                ctx.clearRect(50,50,200,50);
+            }
+        }
+    </script>
+    https://www.w3schools.com/graphics/tryit.asp?filename=trycanvas_clock_start <!--動態時鐘-->
+</body>
+</html>
